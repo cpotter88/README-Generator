@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "a program to create a readme from the command line",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "README-Generator"
+  },
+  "author": "Caitlin Potter",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^12.1.0"
+  }
+}
