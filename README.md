@@ -22,7 +22,9 @@ When running, questions will appear in the terminal to collect information to fi
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 ## Tests
-Start the program by running 'node index.js' in the command line and then inputting answers to each question. Check the results by opening the README file.
+Start the program by running 'node index.js' in the command line and then inputting answers to each question. Check the results by opening the README file located in assets.
+#### Link to Walkthrough Video
+https://drive.google.com/file/d/1JjgRV2S1CSTh3WODL_jvCBmU7shBqIMu/view?usp=sharing
 
 ## Questions
 - GitHub: github.com/cpotter88

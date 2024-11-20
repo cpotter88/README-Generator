@@ -1,32 +1,32 @@
-# dlkjf
-    ##Description
-    jfjfj
-    ![Apache License](https://img.shields.io/badge/License-Apache%20-blue.svg)
+# project title
+## Description
+this is a project
 
-    ##Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Contributing](#contributing)
-    -[Tests](#tests)
-    -[Questions](#questions)
-    -[Licensing](#licensing)
+[MIT License](https://img.shields.io/badge/License-MIT%20-blue.svg)
 
-    ##Installation
-    lsdlfkj
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Licensing](#licensing)
 
-    ##Usage
-    dlskfjsd
+## Installation
+install the files correctly
 
-    ##Contributing
-    lksdflksjdf
+## Usage
+Use this to create a README
 
-    ##Tests
-    lsdkfds
+## Contributing
+Only add useful things
 
-    ##Questions
-    GitHub: github.com/lsdkfj
-    For additional questions: jfjfjfllsdkfs
+## Tests
+Run this in the terminal and then look in the assets for the README
 
-    ##Licensing
-    dlkjf is released under the Apache license. See license documentation for further information.
-    
+## Questions
+- GitHub: github.com/cpotter88
+- For additional questions: email@email.com
+
+## Licensing
+project title is released under the MIT license. See license documentation for further information.
