@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
 
-// TODO: Create an array of questions for user input
+// an array of questions for user input
 const questions = [
     {
         type: "input",
@@ -52,48 +52,41 @@ const questions = [
     },
 ];
 
-// const licenseBadges = {
-//     MIT: '![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)',
-//     Apache: '![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)',
-//     GPL: '![GPL License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)',
-//     BSD: '![BSD License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)',
-  
-// };
-
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     return `# ${data.title}
-    ##Description
-    ${data.description}
-    ![${data.license} License](https://img.shields.io/badge/License-${data.license}%20-blue.svg)
+## Description
+${data.description}
 
-    ##Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Contributing](#contributing)
-    -[Tests](#tests)
-    -[Questions](#questions)
-    -[Licensing](#licensing)
+[${data.license} License](https://img.shields.io/badge/License-${data.license}%20-blue.svg)
 
-    ##Installation
-    ${data.installation}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Licensing](#licensing)
 
-    ##Usage
-    ${data.usage}
+## Installation
+${data.installation}
 
-    ##Contributing
-    ${data.contribution}
+## Usage
+${data.usage}
 
-    ##Tests
-    ${data.test}
+## Contributing
+${data.contribution}
 
-    ##Questions
-    GitHub: github.com/${data.username}
-    For additional questions: ${data.email}
+## Tests
+${data.test}
 
-    ##Licensing
-    ${data.title} is released under the ${data.license} license. See license documentation for further information.
-    `
+## Questions
+- GitHub: github.com/${data.username}
+- For additional questions: ${data.email}
+
+## Licensing
+${data.title} is released under the ${data.license} license. See license documentation for further information.
+`
 }
 
 // TODO: Create a function to initialize app
@@ -101,7 +94,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then ((answers) => {
-            fs.writeFile("./application/README.md", writeToFile(questions, answers), (err) =>
+            fs.writeFile("./assets/README.md", writeToFile(questions, answers), (err) =>
                 err ? console.error(err) : console.log('Your README is now ready')
             );
         });
