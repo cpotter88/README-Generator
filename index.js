@@ -38,7 +38,7 @@ const questions = [
         type: "list",
         message: "What license are you using? ",
         name: "license",
-        choices: ['MIT', 'Apache License 2.0', 'GPL', 'BSD'],
+        choices: ['MIT', 'Apache', 'GPL', 'BSD'],
     },
     {
         type: "input",
@@ -47,14 +47,53 @@ const questions = [
     },
     {
         type: "input",
-        message: "messageWhat is your email address? ",
+        message: "What is your email address? ",
         name: "email",
     },
 ];
 
+// const licenseBadges = {
+//     MIT: '![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)',
+//     Apache: '![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)',
+//     GPL: '![GPL License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)',
+//     BSD: '![BSD License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)',
+  
+// };
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    return `# ${data.title}
+    ##Description
+    ${data.description}
+    ![${data.license} License](https://img.shields.io/badge/License-${data.license}%20-blue.svg)
 
+    ##Table of Contents
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Contributing](#contributing)
+    -[Tests](#tests)
+    -[Questions](#questions)
+    -[Licensing](#licensing)
+
+    ##Installation
+    ${data.installation}
+
+    ##Usage
+    ${data.usage}
+
+    ##Contributing
+    ${data.contribution}
+
+    ##Tests
+    ${data.test}
+
+    ##Questions
+    GitHub: github.com/${data.username}
+    For additional questions: ${data.email}
+
+    ##Licensing
+    ${data.title} is released under the ${data.license} license. See license documentation for further information.
+    `
 }
 
 // TODO: Create a function to initialize app
@@ -62,7 +101,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then ((answers) => {
-            fs.writeFile("./application/README.md", writeToFile(answers), (err) =>
+            fs.writeFile("./application/README.md", writeToFile(questions, answers), (err) =>
                 err ? console.error(err) : console.log('Your README is now ready')
             );
         });
